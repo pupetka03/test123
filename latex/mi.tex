@@ -1,0 +1,67 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{forloop}
+\usepackage{booktabs}
+
+
+\title{How to not loose your mind in code review}
+\author{Linus T.}
+\date{\today} % skús zakomentovať a všimni si rozdiel
+
+\begin{document}
+\maketitle % skús zakomentovať a všimni si rozdiel
+\tableofcontents % skús zakomentovať a všimni si rozdiel
+\section{Motivation}
+bla bla.
+\section{Breathing techniques}
+bla bla.
+\section{Some other section}
+bla bla.
+
+\newpage
+\section{djava sprict}
+
+\newcounter{x}
+\forloop{x}{1}{\value{x} < 15}{
+    The number is \arabic{x}.\\
+}
+
+
+
+\emph{Tento text je celý zvýraznený, a teda sádzaný kurzívou. Toto \emph {slovo}
+je ale zvýraznené, a keďže vnorené v \emph{suka} inom zvýraznenom bloku, bude sádzané
+normálne. }
+
+\begin{description}
+\item[pdfTeX] Prvý pdf kompilátor.
+\item[XeTeX] Kompilátor s podporou Unicode.
+\item[luaTeX] Kompilátor rozšíriteľný jazykom Lua.
+\end{description}
+
+
+
+\linewidth
+\textwidth{
+\paperwidth 
+\paperheight 
+\textheight 
+\columnwidth
+
+
+
+
+
+\begin{tabular}{@{}lll@{}}
+\toprule
+Service & Best SEN & Best PPV \\
+\midrule
+PostgreSQL & OD+T & OD \\
+OpenSSH    & T    & no gen. \\
+Postfix    & M+N  & no gen. \\
+Apache     & T    & T \\
+\bottomrule
+\end{tabular}
+
+\end{document}
+
+\end{document}
+
